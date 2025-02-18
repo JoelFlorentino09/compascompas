@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grupo 1 - Breinith Peña y Michael Lagares</title>
+    <style>
+        body {
+            font-family: 'Times New Roman', Times, serif, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f0f4f8;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            height: 100vh;
+        }
+        .container {
+            width: 80%;
+            max-width: 800px;
+            background-color: #fff;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+            text-align: center;
+            animation: fadeIn 1s ease-in-out;
+        }
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+        .title {
+            font-size: 2em;
+            color: #333;
+            margin: 20px 0;
+        }
+        .profile {
+            padding: 20px;
+            display: flex;
+            align-items: center;
+            gap: 20px;
+            transition: transform 0.3s ease;
+        }
+        .profile:hover {
+            transform: scale(1.05);
+        }
+        .profile img {
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            object-fit: cover;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+        }
+        .breinith {
+            background-color: #ffe6f0;
+            color: #d6336c;
+        }
+        .breinith h2 {
+            color: #ff69b4;
+        }
+        .michael {
+            background-color: #e6f3ff;
+            color: #007bff;
+        }
+        .michael h2 {
+            color: #0056b3;
+        }
+        .text {
+            font-style: italic;
+            text-align: left;
+            line-height: 1.6;
+        }
+        .button-container {
+            margin: 20px 0;
+        }
+        .button {
+            padding: 10px 20px;
+            background-color: #333;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 1em;
+            transition: background-color 0.3s ease;
+        }
+        .button:hover {
+            background-color: #555;
+        }
+        .phrase-section {
+            display: none;
+            padding: 50px 20px;
+            background: linear-gradient(135deg, #ff7eb3, #ff758c, #ffa64c);
+            color: white;
+            font-size: 1.5em;
+            border-radius: 10px;
+            text-align: center;
+            animation: fadeIn 1s ease-in-out;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <div class="title">Conociéndonos a Fondo.</div>
+
+        <div class="profile breinith">
+            <img src="breii.jpeg" alt="Breinith Peña">
+            <div class="text">
+                <h2>Breinith Peña</h2>
+                <p>"¡Hola! Soy Breinith Peña. Actualmente trabajo en Claro, y la programación es una de mis grandes pasiones. Me encanta trabajar con bases de datos y soy experta en SQL. Además, me gusta usar el paquete de Office para crear decoraciones estéticas que le den un toque único a cada proyecto. ¡Cada detalle cuenta!"</p>
+            </div>
+        </div>
+
+        <div class="profile michael">
+            <img src="laga.jpeg" alt="Michael Lagares">
+            <div class="text">
+                <h2>Michael Lagares</h2>
+                <p>"¡Hola! Soy Michael Lagares, y mi pasión es asegurar la seguridad en el mundo digital. Soy experto en SQL Server y tengo habilidades avanzadas en ciberseguridad y Python. Disfruto mucho de los desafíos de la programación y de la ciberseguridad, donde cada problema es una oportunidad para mejorar."</p>
+            </div>
+        </div>
+
+        <div class="button-container">
+            <button class="button" onclick="showPhrase()">Frase</button>
+        </div>
+    </div>
+
+    <div class="phrase-section" id="phraseSection">
+        <p>Somos el Grupo 1, ¡somos los número 1!❤️</p>
+    </div>
+
+    <script>
+        function showPhrase() {
+            document.getElementById('phraseSection').style.display = 'block';
+        }
+    </script>
+
+</body>
+</html>
